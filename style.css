@@ -1,3 +1,5 @@
+/* --- v1 THEME UNTOUCHED --- */
+
 *{
     margin: 0;
     padding: 0;
@@ -85,7 +87,6 @@ nav a:hover{
     transition: background-color 0.2s ease;
     cursor: pointer;
     overflow: hidden;
-
 
 }
 
@@ -208,7 +209,7 @@ main{
     top: 0;
     right: -20%;
    
-    
+     
 }
 
 @media (max-width: 1200px){
@@ -254,7 +255,7 @@ main{
         top: -25%;
         right: 0;
     }
-
+ 
     .content{
         max-width: 30rem;
         margin-left: 10%;
@@ -284,3 +285,173 @@ main{
         padding: 0.5rem 2rem;
     }
 }
+
+/* --- PORTFOLIO SECTIONS BELOW HERO --- */
+.portfolio-section {
+  max-width: 1100px;
+  margin: 4rem auto 0 auto;
+  padding: 2.2rem 2rem 2.3rem 2rem;
+  background: rgba(30,30,35,0.55);
+  border-radius: 1.7rem;
+  box-shadow: 0 4px 40px 0 #7f42a726, 0 0 0 1.5px #2a2a2a;
+  border: 1px solid rgba(127,66,167,0.14);
+  color: #e7e7e7;
+  backdrop-filter: blur(9px);
+}
+
+.portfolio-section h2 {
+  color: #a084ff;
+  font-size: 2.1rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  text-shadow: 0 0 18px #7f42a733;
+}
+
+.about-links,
+.proj-list,
+.exp-list {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+.about-links a {
+  color: #a084ff;
+  text-decoration: none;
+  border: 1.5px solid #a084ff;
+  padding: 0.5rem 1.3rem;
+  border-radius: 2rem;
+  background: transparent;
+  transition: background 0.15s, color 0.15s;
+  font-weight: 600;
+}
+.about-links a:hover {
+  background: #a084ff;
+  color: #181818;
+}
+.exp-list {
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.exp-card {
+  background: rgba(38,38,48,0.77);
+  border-radius: 1.1rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: 0 2px 16px #7f42a712;
+  border-left: 4px solid #a084ff66;
+  font-size: 1.08rem;
+}
+.exp-card strong {
+  color: #a084ff;
+  font-size: 1.13rem;
+}
+.exp-date {
+  color: #a084ff;
+  font-size: 0.97rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.proj-list {
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.proj-card {
+  background: rgba(42,42,58,0.67);
+  border-radius: 1.1rem;
+  padding: 1.1rem 1.2rem;
+  min-width: 240px;
+  max-width: 310px;
+  box-shadow: 0 2px 16px #7f42a718;
+  border: 1.5px solid #7f42a71c;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.proj-title {
+  color: #a084ff;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.proj-card a {
+  background: transparent;
+  color: #a084ff;
+  border: 1.2px solid #a084ff;
+  padding: 0.22rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.99rem;
+  margin-top: 0.2rem;
+  align-self: flex-start;
+  transition: background 0.18s, color 0.18s;
+}
+.proj-card a:hover {
+  background: #a084ff;
+  color: #181818;
+}
+.portfolio-section ul {
+  margin-top: 1.1rem;
+  padding-left: 1.5rem;
+  color: #e7e7e7;
+  font-size: 1.09rem;
+}
+.contact-form {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #a084ff33;
+  background: #222232;
+  color: #e7e7e7;
+  font-size: 1.03rem;
+  resize: none;
+}
+.contact-form button {
+  align-self: flex-end;
+  background: #a084ff;
+  color: #181818;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2.1rem;
+  font-size: 1.05rem;/* ...all previous styles... */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- PORTFOLIO SECTIONS BELOW HERO --- */
+/* Increased width from 900px to 970px for .portfolio-section */
+.portfolio-section {
+  max-width: 970px;
+  margin: 4rem auto 0 auto;
+  padding: 2.3rem 2.3rem 2.3rem 2.3rem;
+  background: rgba(30,30,35,0.55);
+  border-radius: 1.7rem;
+  box-shadow: 0 4px 40px 0 #7f42a726, 0 0 0 1.5px #2a2a2a;
+  border: 1px solid rgba(127,66,167,0.14);
+  color: #e7e7e7;
+  backdrop-filter: blur(9px);
+}
+
+/* Responsive width bumped up slightly for larger screens */
+@media (max-width: 1100px) {
+  .portfolio-section {
+    max-width: 99vw;
+    padding: 1.1rem 0.7rem;
+  }
+}
+@media (max-width: 900px) {
+  .portfolio-section {
+    padding: 1.2rem 0.7rem;
+    max-width: 99vw;
+  }
+  .proj-list, .about-links {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+/* ...rest of your portfolio-section, .about-links, .exp-list, etc. remain unchanged... */

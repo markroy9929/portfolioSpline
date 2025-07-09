@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <img class="image-gradient" src="gradient.png" alt="gradient" />
@@ -17,19 +22,21 @@
           Ankit Tayal
         </h1>
         <nav>
-          <a data-aos="fade-down" data-aos-duration="1500" href="#">Home</a>
-          <a data-aos="fade-down" data-aos-duration="2000" href="#">About</a>
-          <a data-aos="fade-down" data-aos-duration="2500" href="#">Services</a>
-          <a data-aos="fade-down" data-aos-duration="3000" href="#">Contact</a>
+          <a data-aos="fade-down" data-aos-duration="1500" href="#home">Home</a>
+          <a data-aos="fade-down" data-aos-duration="1600" href="#about">About</a>
+          <a data-aos="fade-down" data-aos-duration="1700" href="#experience">Experience</a>
+          <a data-aos="fade-down" data-aos-duration="1800" href="#projects">Projects</a>
+          <a data-aos="fade-down" data-aos-duration="1900" href="#achievements">Achievements</a>
         </nav>
-
-        <button
+        <a
           data-aos="fade-down"
           data-aos-duration="1500"
           class="btn-signin"
+          href="#contact"
+          style="text-decoration:none;"
         >
-          SIGN IN
-        </button>
+          Contact Me
+        </a>
       </header>
       <main>
         <div class="content">
@@ -41,7 +48,7 @@
             data-aos-duration="1500"
             class="tag-box"
           >
-            <div class="tag">INTRODUCING &wedbar;</div>
+            <div class="tag">AWS CERTIFIED</div>
           </div>
           <h1 data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
@@ -57,9 +64,7 @@
             data-aos-delay="300"
             data-aos-offset="0"
             data-aos-duration="2500" class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            repellat obcaecati ullam sunt magnam rem, non saepe doloremque
-            labore nesciunt?
+            Backend & DevOps Developer passionate about building scalable cloud-native systems, automation pipelines, and AI infrastructure. Experienced with AWS, Docker, Kubernetes, and modern CI/CD practices.
           </p>
 
           <div data-aos="fade-zoom-in"
@@ -67,8 +72,8 @@
             data-aos-delay="300"
             data-aos-offset="0"
             data-aos-duration="3000" class="buttons">
-            <a href="#" class="btn-get-started">DOCUMENTATION &gt;</a>
-            <a href="#" class="btn-signin-main">Getstarted &gt;</a>
+            <a href="#about" class="btn-get-started">ABOUT ME &gt;</a>
+            <a href="#contact" class="btn-signin-main">Get in Touch &gt;</a>
           </div>
         </div>
       </main>
@@ -82,6 +87,98 @@
         url="https://prod.spline.design/LdAvrH-DbPsag4MN/scene.splinecode"
       ></spline-viewer>
     </div>
+
+    <!-- Portfolio sections remain unchanged below -->
+
+    <section class="portfolio-section" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Ankit Tayal, a Backend & DevOps Developer passionate about scalable, cloud-native, and automated systems. 
+        Specializing in AI frameworks, automation, AWS, Docker, CI/CD, and Kubernetes.
+        <br><br>
+        <strong>B.Tech, Industrial Internet of Things</strong> — University School of Automation & Robotics, GGSIPU.
+      </p>
+      <div class="about-links">
+        <a href="https://github.com/ankitT20/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ankit-tayal-ip/" target="_blank">LinkedIn</a>
+        <a href="mailto:tayalankit20@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="portfolio-section" id="experience">
+      <h2>Experience</h2>
+      <div class="exp-list">
+        <div class="exp-card">
+          <strong>Agentic AI Engineer</strong> @ Prodigal AI <span class="exp-date">(2025–Present)</span>
+          <ul>
+            <li>Co-developed agentic AI frameworks for multi-agent workflows and scalable AI solutions (AI podcast generator, cloud-native APIs).</li>
+            <li>Designed LLM inference pipelines (Docker, Python), reducing latency by 3x and cost by 30%.</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <strong>Financial Research Engineer</strong> @ StockGro <span class="exp-date">(2022)</span>
+          <ul>
+            <li>Built real-time data viz with Python microservices, boosting engagement by 15%.</li>
+            <li>Automated analytics for Nifty stock data, improving portfolio performance by 10%.</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <strong>Co-Lead, GDSC USAR</strong> <span class="exp-date">(2023–24)</span>
+          <ul>
+            <li>Founded club, led Google Cloud jams, grew to 120+ members, Tier 1 GCP badge event.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="portfolio-section" id="projects">
+      <h2>Projects</h2>
+      <div class="proj-list">
+        <div class="proj-card">
+          <span class="proj-title">Journal App – SpringBoot</span>
+          <p>JWT/OAuth2, MongoDB, role-based API, CI/CD, sentiment analysis.</p>
+          <a href="https://github.com/ankitT20/journalApp" target="_blank">GitHub</a>
+        </div>
+        <div class="proj-card">
+          <span class="proj-title">Full Stack CI/CD App</span>
+          <p>Docker, Travis, AWS, GCP, Kubernetes, Helm, automated deployments.</p>
+          <a href="https://github.com/ankitt20/k8sApp" target="_blank">GitHub</a>
+        </div>
+        <div class="proj-card">
+          <span class="proj-title">Unified Academic Services Platform</span>
+          <p>Python, AWS, PostgreSQL, React.js, Node.js, Stripe, multilingual, Agile.</p>
+          <a href="https://github.com/ankitT20/UASP" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="portfolio-section" id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/ankitT20/Achievements/blob/main/Cert/IBM_Data_Analytics_Summer_Internship_Certificate.pdf" target="_blank">IBM Data Analytics Internship</a>
+        </li>
+        <li>
+          <a href="https://github.com/ankitT20/Achievements/blob/main/Cert/IIT_Delhi_Merit_Certificate_Rendezvous.pdf" target="_blank">1st Rank, IIT Delhi CryptoCon</a>
+        </li>
+        <li>Solved 200+ DSA problems on Pepcoding, LeetCode, GFG</li>
+        <li>SRanked 5th in department during 2nd & 8th semester.</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="portfolio-section" id="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" action="mailto:tayalankit20@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-signin-main">Send</button>
+      </form>
+    </section>
 
     <script
       type="module"
